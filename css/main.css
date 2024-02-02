@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+.active{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+.hero{
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/welcome.png');
+    background-size: contain;
+}
+
+.inner_hero{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.280);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome{
+    width: 70%;
+    margin: auto;
+}
+
+.welcome h2{
+    font-size: 54px;
+    color: #fff;
+}
+
+.welcome p{
+    color: #fff;
+    font-size: 24px;
+    margin: 45px 0;
+}
+
+.welcome a, .section2 a{
+    background-color: gold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+
+
+/* PARTNERS */
+.partners{
+    width: 50%;
+    height: 70PX;
+    border: 1PX solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-radius: 4px;
+    position: relative;
+    animation: updown 4s ease-in-out infinite;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+/* ANIMATION */
+@keyframes updown{
+    from{
+        top: 5px;
+    }
+    to{
+        top: -40px;
+    }
+}
+
+.joblisting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto;
+}
+
+#section1_description{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.section1_category a{
+    color: #ccc;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.section1_category a:first-child{
+    border-bottom: 2px solid green;
+}
+
+
+/* Jobs */
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 97%;
+    margin: 50px auto;
+}
+.job_item{
+    width: 23%;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 4px 5px 1px #615f5f;    
+}
+.inner_job_item{
+    margin: 14px;
+}
+.job_item_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.job_product h1{
+    margin-bottom: 10px;
+    padding: 4px auto;
+}
+
+.product_time{
+    margin-bottom: 50px;
+    padding: 4px auto;
+    
+}
+
+.product_time span{
+     padding: 8px 15px;
+     border-radius: 16px;
+}
+
+.product_time span.fulltime{
+    background-color:rgba(0, 128, 0, 0.411);
+}
+.product_time span.design{
+    background-color:rgba(255, 217, 0, 0.429);
+}
+
+.discription{
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.job_bottons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.job_bottons .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn.view{
+   border: 2px solid gold; 
+}
+
+.btn.apply{
+    border: 2px solid green;
+    background-color: green;
+    color: white; 
+}
