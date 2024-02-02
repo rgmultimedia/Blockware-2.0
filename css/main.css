@@ -54,7 +54,23 @@ nav a:hover{
 .welcome h2{
     font-size: 54px;
     color: #fff;
+    animation: jumping 1.5s ease-in-out infinite;
 }
+
+
+/* ANIMATION for Welcome h2 */
+@keyframes jumping {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translate(20px);
+    }
+    60% {
+        transform: translate(10px);
+    }
+}
+
 
 .welcome p{
     color: #fff;
@@ -102,6 +118,7 @@ nav a:hover{
         top: -40px;
     }
 }
+
 
 .joblisting{
     display: flex;
