@@ -29,6 +29,14 @@
             </nav>
             <i class="bi bi-list menu"></i>
         </header>
+
+        <div class="mobile_links">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact-us</a>
+            <a href="login">Account</a>
+            <a href="#">Post a Job</a> 
+        </div>
     
         <!-- Hero Section -->
        <section class="hero">
@@ -496,6 +504,7 @@
         <p>&copy; 2024 RGE Professional Website. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+
     <!-- JAVA SCRIPT -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -518,6 +527,31 @@
     </main>
     
 <!-- <botton class="btn_fixed menu"> ^ </botton> -->
+
+<!-- java script -->
+<script>
+    let isOpen = false; // Initialize a variable to track the state
+    const menu = document.querySelector('.menu');
+    menu.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        isOpen = !isOpen; // Toggle the state on each click
+
+        // Select the mobile_links element
+        const mobileLinks = document.querySelector('.mobile_links');
+
+        if (isOpen) {
+            // If isOpen is true, show the mobile_links
+            mobileLinks.style.display = "flex";
+            mobileLinks.style.position = "absolute";
+            mobileLinks.style.top = "70px";
+            mobileLinks.style.right = "0px";
+            mobileLinks.style.zIndex = "100";
+        } else {
+            // If isOpen is false, hide the mobile_links
+            mobileLinks.style.display = "none";
+        }
+    });
+</script>
 
 </body>
 </html>
